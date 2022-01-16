@@ -1,0 +1,133 @@
+    .main {
+        color: var(--text-color);
+        margin: 0px 5px 0px 5px;
+        border-radius: 3%;
+        font-family: 'Mochiy Pop P One', sans-serif;
+    }
+    
+    :root {
+        --color-gray: #ebebeb;
+        --text-color: black;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: 4px;
+        text-decoration: underline;
+        font-family: sans-serif;
+        padding: 30px 10px;
+    }
+    
+    .highlight {
+        background: var(--color-gray);
+    }
+    
+    #image {
+        border: 2px solid;
+        margin-bottom: 10px;
+    }
+    
+    #black-color {
+        color: white;
+        background: black;
+    }
+    
+    #image,
+    #image-caption {
+        display: inline;
+        text-align: left;
+        font-size: 1em;
+        margin-left: 0;
+        margin-right: auto;
+        max-width: 100%;
+    }
+    
+    #short-txt {
+        display: none;
+    }
+    
+    #tribute_info {
+        display: block;
+        padding: 0px 50px 50px 50px;
+        margin: 30px;
+        border: 2px solid;
+        background: var(--color-gray);
+        text-align: justify;
+    }
+    
+    #big-text {
+        font-size: 3em;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 0;
+    }
+    
+    .item1 {
+        color: white;
+    }
+    
+    #linked {
+        color: blue;
+    }
+    
+    .item2 {
+        color: white;
+        justify-self: flex-start;
+    }
+    
+    .item3 {
+        color: white;
+    }
+    
+    @media (max-width:950px) and (min-width:300px) {
+        #image,
+        #image-caption {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+        footer {
+            justify-content: flex-start;
+        }
+        .item1 {
+            flex-grow: 2;
+        }
+        .item2 {
+            flex-grow: 4;
+        }
+        #black-color {
+            color: white;
+            background: black;
+            border-radius: 50%;
+        }
+    }
+    
+    @media (max-width:299px) and (min-width:100px) {
+        #image,
+        #image-caption {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+        #short-txt {
+            display: inline;
+        }
+        #long-txt {
+            display: none;
+        }
+        #tribute_info {
+            border: none;
+            text-align: center;
+        }
+    }
